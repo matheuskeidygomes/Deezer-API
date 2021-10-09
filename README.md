@@ -6,5 +6,5 @@ Aplicação web criada com React.js, para consumação da API pública disponibi
 
 Após baixar o conteúdo do repositório, direcionar-se para a pasta do projeto utilizando o CMD, e rodar os comandos:
 
- 1º - npm install
- 2º - npm start 
+1º - npm install
+2º - npm start 
