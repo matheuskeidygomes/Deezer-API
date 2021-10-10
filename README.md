@@ -1,6 +1,6 @@
 # Deezer-API
 
-Aplicação web criada com React.js, para consumação da API pública disponibilizada pela plataforma de músicas Deezer. Para estilização do projeto foi utilizada StyleSheet components.
+Aplicação web criada com React.js, para consumir a API pública disponibilizada pela plataforma de músicas Deezer. Para estilização do projeto foi utilizada StyleSheet components.
 
 ## Instalação
 
