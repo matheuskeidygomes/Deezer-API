@@ -20,6 +20,28 @@ export default function Home() {
 
       async function getMusics() {
 
+         try {
+
+            let res = await api.get("/search/track?q=eminem");
+
+            let json = res.data;
+
+            setMusicList(json.data);
+
+            setSearchList(json.data);
+         
+         } catch (err) {
+
+            setError(err);
+         }
+
+      }
+
+
+      /*
+
+      async function getMusics() {
+
          await api.get("/search/track?q=eminem").then((res) => {
    
             setMusicList(res.data.data);
@@ -33,6 +55,8 @@ export default function Home() {
 
       }
 
+      */
+
       getMusics();
 
    }, []);
@@ -40,7 +64,7 @@ export default function Home() {
 
    useEffect(() => {
 
-      if (MusicSearched != '') {
+      if (MusicSearched !== '') {
   
         setSearchList(MusicList.filter((item) => item.title.toLowerCase().indexOf(MusicSearched.toLowerCase()) > -1));
   

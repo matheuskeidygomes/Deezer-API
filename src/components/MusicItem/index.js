@@ -1,9 +1,33 @@
 import React from 'react';
 import { Track } from './styled';
+import { useSelector, useDispatch } from 'react-redux';
 
 export default function MusicItem(props) {
-
+    
     const item = props.data;
+
+    const dispatch = useDispatch();
+
+    const favorites = useSelector(state => state.ListFavorites.musics);
+
+
+    function AddFavorites(item) {
+
+        dispatch({
+            type: 'ADD_FAVORITES',
+            payload: item
+        })
+    }
+
+
+    function DelFavorites(item) {
+
+        dispatch({
+            type: 'DEL_FAVORITES',
+            payload: item
+        })
+    }
+
 
     return <>
 
@@ -50,6 +74,23 @@ export default function MusicItem(props) {
                     <div className="buttons">
 
                         <a className="redirect-button" href={item.link} target="_blank"> View in Deezer </a>
+
+                    </div>
+
+                    <div className="buttons">
+
+
+                        { favorites.some(favorite => favorite.id == item.id) ?
+
+                            <a className="redirect-button" onClick={ () => DelFavorites(item) }> 
+                                Delete Favorite
+                            </a>
+                        :
+                            <a className="redirect-button" onClick={ () => AddFavorites(item) }> 
+                                Add Favorites
+                            </a>
+                        }
+
 
                     </div>
 

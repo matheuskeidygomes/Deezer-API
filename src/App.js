@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header/index';
 import Footer from './components/Footer/index';
 import Home from './pages/Home/index';
+import Favorites from './pages/Favorites/index';
 
 export default function App() {
 
@@ -15,9 +16,15 @@ export default function App() {
 
       <Switch>
 
-        <Route path="/">
+        <Route exact path="/">
+         
+          <Home /> 
 
-          <Home />
+        </Route>
+
+        <Route path="/favorites">
+
+          <Favorites />
 
         </Route>
 

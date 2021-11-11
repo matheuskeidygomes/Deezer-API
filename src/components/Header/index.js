@@ -30,6 +30,10 @@ export default function Header() {
                             <Link to="/"> Home </Link>
                         </li>
 
+                        <li>
+                            <Link to="/favorites"> Favorites </Link>
+                        </li>
+
 
                     </ul>
 
