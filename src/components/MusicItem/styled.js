@@ -83,7 +83,8 @@ export const Track = styled.div`
     
             .buttons {
 
-                padding-top:15px;
+                display:flex;
+                margin-top:10px;
 
                 .redirect-button {
                     font-family: 'Didact Gothic', sans-serif;
@@ -92,12 +93,16 @@ export const Track = styled.div`
                     font-weight:bold;
                     border-radius:18px;
                     font-size:15px;
-                    flex:3;
+                    flex:1;
                     border-style:none;
                     cursor:pointer;
                     text-decoration:none;
-                    text-align:center;
-                    line-height:60px;   
+                    text-align:center;  
+                    padding:10px;
+
+                    img {
+                        width:40px;
+                    }
                     
                     :hover {
                         background-color:#525252;
@@ -106,6 +111,24 @@ export const Track = styled.div`
                         -o-transition: 0.5s ease-out;
                         transition: 0.5s ease-out;
                     }
+                }
+
+                .fav-button {
+                    margin-left:5px;
+                    padding:0px;
+                    background-color:transparent;
+
+                    img {
+                        width:60px;
+                    }
+
+                    :hover {
+                        background-color:transparent;
+                    }
+                }
+
+                .fav-button:hover {
+
                 }
     
             }

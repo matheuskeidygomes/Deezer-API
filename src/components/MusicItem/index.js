@@ -1,6 +1,9 @@
 import React from 'react';
 import { Track } from './styled';
 import { useSelector, useDispatch } from 'react-redux';
+import Like from '../Images/Like/heart.png';
+import Unlike from '../Images/Like/heart-full.png';
+import Redirect from '../Images/Redirect/redirect.png';
 
 export default function MusicItem(props) {
     
@@ -49,7 +52,7 @@ export default function MusicItem(props) {
 
                     <div className="music-title">
 
-                        <h2> Track: {item.title} </h2>
+                        <h2> {item.title} - {item.album.title} </h2>
 
                     </div>
 
@@ -59,35 +62,29 @@ export default function MusicItem(props) {
 
                     </div>
 
-                    <div className="music-album">
-
-                        <h2> Album: {item.album.title} </h2>
-
-                    </div>
-
                     <div className="music-player">
 
                         <audio className="player" controls> <source src={item.preview} type="audio/mp3" /> </audio>
 
                     </div>
 
-                    <div className="buttons">
-
-                        <a className="redirect-button" href={item.link} target="_blank"> View in Deezer </a>
-
-                    </div>
 
                     <div className="buttons">
 
+                        <a className="redirect-button" href={item.link} target="_blank"> 
+
+                            <img src={Redirect} />
+                        
+                        </a>
 
                         { favorites.some(favorite => favorite.id == item.id) ?
 
-                            <a className="redirect-button" onClick={ () => DelFavorites(item) }> 
-                                Delete Favorite
+                            <a className="redirect-button fav-button" onClick={ () => DelFavorites(item) }> 
+                                <img src={Unlike} />
                             </a>
                         :
-                            <a className="redirect-button" onClick={ () => AddFavorites(item) }> 
-                                Add Favorites
+                            <a className="redirect-button fav-button" onClick={ () => AddFavorites(item) }> 
+                                <img src={Like} />
                             </a>
                         }
 
