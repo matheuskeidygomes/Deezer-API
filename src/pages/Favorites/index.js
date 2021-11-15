@@ -85,7 +85,7 @@ export default function Favorites() {
 
                   <div className="no-favorites"> 
 
-                        <h3> Não há favoritos adicionados. </h3>
+                        <h3> Não há favoritos disponíveis. </h3>
 
                         <img src={SadFace} className="sad-face" />
 
