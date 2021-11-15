@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container, Content, InputArea, SearchInput, ListTitle, ListMusic } from './styled';
 import MusicItem from '../../components/MusicItem/index';
 import { useSelector } from 'react-redux';
+import SadFace from '../../components/Images/NoFavorites/sad.png';
 
 
 export default function Favorites() {
@@ -54,6 +55,7 @@ export default function Favorites() {
 
             <InputArea>
 
+
                <SearchInput>
 
                   <input className="search-item" type="text" value={MusicSearched} onChange={e => setMusicSearched(e.target.value)} placeholder="Search your favorite song here..."/>
@@ -71,11 +73,25 @@ export default function Favorites() {
 
             <ListMusic>
 
-               {searchList.map((item, index) => (
+               {searchList.length > 0 ?
 
-                  <MusicItem key={index} data={item}/>
+                  searchList.map((item, index) => (
 
-               ))}
+                     <MusicItem key={index} data={item}/>
+
+                  ))
+
+               :
+
+                  <div className="no-favorites"> 
+
+                        <h3> Não há favoritos adicionados. </h3>
+
+                        <img src={SadFace} className="sad-face" />
+
+                  </div>
+
+               }
 
             </ListMusic>
 

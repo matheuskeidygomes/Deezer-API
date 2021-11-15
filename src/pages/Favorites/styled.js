@@ -60,5 +60,21 @@ export const ListMusic = styled.div`
     flex-wrap:wrap;
     display:flex;
 
+    .no-favorites {
+
+        margin-top:70px;
+        text-align:center; 
+        flex:1;
+
+        h3 {
+            color:white;
+            font-family: 'Didact Gothic', sans-serif;
+        }
+
+        .sad-face {
+            width:50px;
+        }
+    }
+
 `;
 
