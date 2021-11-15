@@ -13,7 +13,8 @@ Após baixar o conteúdo do repositório, direcionar-se para a pasta do projeto 
 
 - Javascript  
 - HTML/CSS  
-- React.js  
+- React.js (com Hooks)
+- Axios 
 - Redux (LocalStorage)  
 
 
