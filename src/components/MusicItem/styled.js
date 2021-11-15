@@ -88,7 +88,6 @@ export const Track = styled.div`
 
                 .redirect-button {
                     font-family: 'Didact Gothic', sans-serif;
-                    background: #2C2C2C;
                     color: white;
                     font-weight:bold;
                     border-radius:18px;
@@ -104,13 +103,6 @@ export const Track = styled.div`
                         width:40px;
                     }
                     
-                    :hover {
-                        background-color:#525252;
-                        -webkit-transition: 0.5s ease-out;
-                        -moz-transition: 0.5s ease-out;
-                        -o-transition: 0.5s ease-out;
-                        transition: 0.5s ease-out;
-                    }
                 }
 
                 .fav-button {
@@ -122,9 +114,6 @@ export const Track = styled.div`
                         width:60px;
                     }
 
-                    :hover {
-                        background-color:transparent;
-                    }
                 }
 
                 .fav-button:hover {

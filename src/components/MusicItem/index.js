@@ -71,12 +71,6 @@ export default function MusicItem(props) {
 
                     <div className="buttons">
 
-                        <a className="redirect-button" href={item.link} target="_blank"> 
-
-                            <img src={Redirect} />
-                        
-                        </a>
-
                         { favorites.some(favorite => favorite.id == item.id) ?
 
                             <a className="redirect-button fav-button" onClick={ () => DelFavorites(item) }> 
@@ -88,6 +82,11 @@ export default function MusicItem(props) {
                             </a>
                         }
 
+                        <a className="redirect-button" href={item.link} target="_blank"> 
+
+                            <img src={Redirect} />
+
+                        </a>
 
                     </div>
 
