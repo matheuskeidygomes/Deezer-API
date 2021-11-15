@@ -15,7 +15,6 @@ export default function Favorites() {
    const [FavoritesList, setFavoritesList] = useState(favorites);
 
 
-
    useEffect(() => {
 
       async function getFavorites() {
@@ -68,6 +67,7 @@ export default function Favorites() {
                <h2> Favorites </h2>
 
             </ListTitle>
+
 
             <ListMusic>
 

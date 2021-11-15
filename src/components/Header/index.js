@@ -1,7 +1,7 @@
 import React from 'react';
 import { HeaderArea } from './styled';
 import { Link } from 'react-router-dom';
-import Logo from './logo.png';
+import Logo from '../Images/Logo/logo.png';
 
 
 export default function Header() {
