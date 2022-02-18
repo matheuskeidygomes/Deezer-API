@@ -71,6 +71,7 @@ export default function MusicItem(props) {
 
                     <div className="buttons">
 
+                
                         { favorites.some(favorite => favorite.id == item.id) ?
 
                             <a className="redirect-button fav-button" onClick={ () => DelFavorites(item) }> 

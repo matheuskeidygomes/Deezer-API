@@ -57,8 +57,38 @@ nav {
 
         }
         
-    }
+    }    
   
+}
+
+@media only screen and (min-width:390px) and (max-width:500px) {
+
+    .logo {
+        img {
+            width:180px;
+        }
+    }
+    
+}
+
+@media only screen and (min-width:350px) and (max-width:390px) {
+
+    .logo {
+        img {
+            width:150px;
+        }
+    }
+    
+}
+
+@media only screen and (min-width:0px) and (max-width:350px) {
+
+    .logo {
+        img {
+            width:110px;
+        }
+    }
+    
 }
 
 
