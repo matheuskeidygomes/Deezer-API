@@ -14,11 +14,11 @@ export default function App() {
 
       <Header />
 
-      <Switch>
+      <Switch> 
 
         <Route exact path="/">
-         
-          <Home /> 
+
+          <Home />
 
         </Route>
 
