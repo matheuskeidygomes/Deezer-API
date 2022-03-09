@@ -32,7 +32,7 @@ Aplicação web criada com React.js, para consumir a API pública disponibilizad
 
 # Screenshots
 
-![Sistem](https://user-images.githubusercontent.com/74063350/149072409-effa2c12-41c6-43c9-80fb-7b1077057b86.PNG)
+![DeezerAPI](https://user-images.githubusercontent.com/74063350/157446144-b2197b00-75ff-4da1-a461-afaa13ef7aa5.png)
 
 # Pré-requisitos
 
