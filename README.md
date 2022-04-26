@@ -29,6 +29,13 @@ Aplicação web criada com React.js, para consumir a API pública disponibilizad
 - [x] Adicionar músicas favoritas em lista de favoritos.
 - [ ] Remover músicas favoritas da lista de favoritos. 
 
+# Repositório Online
+
+Acesse clicando no botão abaixo:   
+  
+<a href="https://deezer-api-music.herokuapp.com/"> 
+    <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white"/> 
+</a>
 
 # Screenshots
 
